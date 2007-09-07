@@ -1,0 +1,11 @@
+--- Services_Technorati-0.7.1beta/usr/share/pear/Services/Technorati.php~	2007-09-07 15:18:53.000000000 +0000
++++ Services_Technorati-0.7.1beta/usr/share/pear/Services/Technorati.php	2007-09-07 15:32:11.000000000 +0000
+@@ -28,7 +28,7 @@
+ /**
+  * We have our own Exception class
+  */
+-require_once 'Technorati/Exception.php';
++require_once 'Services/Technorati/Exception.php';
+ 
+ /**
+  * Client for Technorati's REST-based webservices

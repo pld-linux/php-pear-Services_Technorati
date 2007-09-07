@@ -12,6 +12,7 @@ License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	6abf7b9338a30828ed0a9118e02b378b
+Patch0:		%{name}-paths_fix.patch
 URL:		http://pear.php.net/package/Services_Technorati/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -70,6 +71,7 @@ Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT

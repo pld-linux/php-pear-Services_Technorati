@@ -42,7 +42,7 @@ In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
 Services_Technorati to wrapper dla opartego na technologii REST API
-webserices Technorati. Technorati to wyspecjalizowana wyszukiwarka do
+usług WWW Technorati. Technorati to wyspecjalizowana wyszukiwarka do
 blogów udostępniająca dużą liczbę interfejsów do współpracy z wpisami
 na blogach, np. wyszukiwanie wpisów zawierających odnośnik do zadanej
 strony, wpisy do których jest odnośnik z zadanej strony bądź też

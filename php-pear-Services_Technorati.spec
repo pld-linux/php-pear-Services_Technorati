@@ -19,6 +19,7 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-HTTP_Request
 Requires:	php-pear-PEAR >= 1.4.0b1
+Obsoletes:	php-pear-Services_Technorati-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,20 +56,6 @@ kompatybilnych z Cache_Lite.
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-AutoReq:	no
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 %patch0 -p1
@@ -92,7 +79,3 @@ fi
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Services/Technorati
 %{php_pear_dir}/Services/Technorati.php
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/Services_Technorati
